@@ -1,0 +1,11 @@
+/* Empty. Add your own CSS if you like */
+.user-button{
+    margin:10px;
+}
+.menu{
+    padding-top:44px;
+}
+
+.bar .back-button.hide, .bar .buttons .hide{
+    display:block !important;
+}

@@ -1,0 +1,22 @@
+<ion-view view-title="Benutzer">
+    <ion-nav-bar class="bar-positive">
+        <ion-nav-buttons side="left">
+            <button class="button button-icon icon ion-navicon" menu-toggle="left"></button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-side-menu-content>
+        <ion-content>
+            <button class="button button-positive user-button" ng-click="user.getUsers()">Get Users!</button>
+            <ion-list>
+                <ion-item ng-repeat="user in user.users">
+                    <label ng-bind="user.name"></label>
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-side-menu-content>
+    <ion-side-menu side="left">
+        <ion-list>
+            <ion-item ng-click="user.logout()" menu-toggle="left">Logout</ion-item>
+        </ion-list>
+    </ion-side-menu>
+</ion-view>
